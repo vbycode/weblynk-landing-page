@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn web development from basics." />
     <title>Welcome to - WebLynk</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -16,17 +22,16 @@
 
       <nav class="navbar">
         <ul class="nav-links">
-          <li class="nav-link"><a href="#home">Home</a></li>
-          <li class="nav-link"><a href="#learn">Cources</a></li>
-          <li class="nav-link"><a href="#about">About</a></li>
-          <li class="nav-link"><a href="#contact">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#course">Courses</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <div class="menu" aria-label="Menu" role="button" tabindex="0">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+        <button class="menu" aria-label="Open navigation menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
       </nav>
     </header>
 
@@ -37,7 +42,7 @@
         <a href="#learn" class="btn">Get Started</a>
       </section>
 
-      <section id="about" class="about">
+      <section id="about" class="about-section">
         <h2>About Us</h2>
 
         <p>
@@ -47,23 +52,23 @@
         </p>
       </section>
 
-      <section id="learn" class="learn">
+      <section id="course" class="course-section">
         <h2>Courses</h2>
 
-        <div class="course-grid">
-          <article class="course-card">
+        <div class="card-grid" id="course-grid">
+          <article class="card" id="course-card">
             <h3>HTML</h3>
             <p>Learn the structure of web pages.</p>
             <button class="btn">Start Learning</button>
           </article>
 
-          <article class="course-card">
+          <article class="card" id="course-card">
             <h3>CSS</h3>
             <p>Learn how to add style to web pages.</p>
             <button class="btn">Start Learning</button>
           </article>
 
-          <article class="course-card">
+          <article class="card" id="course-card">
             <h3>JavaScript</h3>
             <p>Learn how to make web pages interactive.</p>
             <button class="btn">Start Learning</button>
@@ -71,34 +76,51 @@
         </div>
       </section>
 
-      <section id="contact">
+      <section id="features" class="features-section">
+        <h2>Why Choose Weblynk?</h2>
+        <h4>Everything you need to start your web development journey.</h4>
+
+        <div class="card-grid" id="features-grid">
+          <article class="card" id="features-card">
+            <h3>Project-Based Learning</h3>
+            <p>
+              Build real-world projects while learning HTML, CSS, JavaScript and
+              React.
+            </p>
+          </article>
+
+          <article class="card" id="features-card">
+            <h3>Beginner Friendly</h3>
+            <p>Easy-to-follow lessons designed for beginners.</p>
+          </article>
+
+          <article class="card" id="features-card">
+            <h3>Career Focused</h3>
+            <p>Prepare yourself for internships and frontend developer jobs.</p>
+          </article>
+
+          <article class="card" id="features-card">
+            <h3>Community Support</h3>
+            <p>Learn with other developers and grow together.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
         <form action="#" class="form">
-          <fieldset>
+          <fieldset class="form-container">
             <legend>Send us message</legend>
 
             <label for="name">Name :</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="palceholder"
-              required
-            />
+            <input type="text" name="name" id="name" required />
             <label for="email">Email :</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="palceholder"
-              required
-            />
+            <input type="email" name="email" id="email" required />
             <label for="message">Message :</label>
             <textarea
               name="message"
               id="message"
               cols="30"
               rows="2"
-              class="palceholder"
               required
             ></textarea>
 
@@ -109,7 +131,10 @@
     </main>
 
     <footer>
-      <p>&copy; All rights reserved - 2026.</p>
+      ---------------------------------- WebLynk Learn web development from
+      basics. Quick Links Home Courses About Contact Follow Us GitHub LinkedIn
+      Twitter © 2026 WebLynk. All rights reserved.
+      ----------------------------------
     </footer>
 
     <script src="Script.js"></script>
