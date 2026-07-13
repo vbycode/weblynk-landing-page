@@ -25,6 +25,7 @@ A modern, responsive landing page built using **HTML5**, **CSS3**, and **JavaScr
 ## 📱 Responsive Design
 
 Optimized for:
+
 - Desktop
 - Tablet
 - Mobile
@@ -65,4 +66,4 @@ Through this project, I practiced:
 
 **Vaibhav Tyagi**
 
-GitHub: https://github.com/vaibhav-tyagi-00
+GitHub: https://github.com/vbycode
