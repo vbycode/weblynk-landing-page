@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to - WebLynk</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a class="logo" href="#home">
+        <span>WebLynk</span>
+        <small>Learn web development</small>
+      </a>
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li class="nav-link"><a href="#home">Home</a></li>
+          <li class="nav-link"><a href="#learn">Cources</a></li>
+          <li class="nav-link"><a href="#about">About</a></li>
+          <li class="nav-link"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="menu" aria-label="Menu" role="button" tabindex="0">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <h1>Welcome to <span>WebLynk</span></h1>
+        <p>Learn web development from basics.</p>
+        <a href="#learn" class="btn">Get Started</a>
+      </section>
+
+      <section id="about" class="about">
+        <h2>About Us</h2>
+
+        <p>
+          <span>WebLynk </span> is a team of experienced web developers who have
+          worked in the industry for many years. We created this platform to
+          help students learn web development from the ground up.
+        </p>
+      </section>
+
+      <section id="learn" class="learn">
+        <h2>Courses</h2>
+
+        <div class="course-grid">
+          <article class="course-card">
+            <h3>HTML</h3>
+            <p>Learn the structure of web pages.</p>
+            <button class="btn">Start Learning</button>
+          </article>
+
+          <article class="course-card">
+            <h3>CSS</h3>
+            <p>Learn how to add style to web pages.</p>
+            <button class="btn">Start Learning</button>
+          </article>
+
+          <article class="course-card">
+            <h3>JavaScript</h3>
+            <p>Learn how to make web pages interactive.</p>
+            <button class="btn">Start Learning</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <form action="#" class="form">
+          <fieldset>
+            <legend>Send us message</legend>
+
+            <label for="name">Name :</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="palceholder"
+              required
+            />
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="palceholder"
+              required
+            />
+            <label for="message">Message :</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="2"
+              class="palceholder"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn">Message</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; All rights reserved - 2026.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+  </body>
+</html>
